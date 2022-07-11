@@ -1,0 +1,44 @@
+{
+  "name": "supportcommands",
+  "description": "Teste criação de lib javascript",
+  "main": "dist/webpack-numbers.js",
+  "version": "0.0.0",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffSouzaSilva/supportCommands.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffSouzaSilva/supportCommands/issues"
+  },
+  "homepage": "https://github.com/JeffSouzaSilva/supportCommands#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "husky": "^8.0.1",
+    "lodash": "^4.17.21",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
